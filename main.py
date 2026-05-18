@@ -10,7 +10,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from bs4 import BeautifulSoup
-from typing import Optional
 from curl_cffi import requests
 import json
 import re
@@ -37,7 +36,6 @@ class ParseRequest(BaseModel):
 class ParseResponse(BaseModel):
     name: str              # Назва товару
     currentPrice: str      # Ціна як текст (напр. "1 200 UAH")
-    oldPrice: Optional[str] = None
 
 # 3. ДОПОМІЖНІ ФУНКЦІЇ
 def clean_price(text):
