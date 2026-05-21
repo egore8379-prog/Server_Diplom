@@ -26,7 +26,7 @@ app.add_middleware(
 
 # Заголовки, щоб сайти думали, що це звичайний браузер
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124.0.0.0"
 }
 
 # 2. МОДЕЛІ ДАНИХ
