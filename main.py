@@ -137,7 +137,7 @@ def parse_product(request: ParseRequest):
 
     try:
         # 1. Завантажуємо сторінку
-        page = requests.get(request.url, headers=HEADERS, impersonate="chrome124", timeout=10)
+        page = requests.get(request.url, headers=HEADERS, impersonate="safari15_5", timeout=15)
         page.encoding = "utf-8"
         
         if page.status_code == 200:
